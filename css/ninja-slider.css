@@ -2,7 +2,7 @@
 
 #ninja-slider {
     width:100%;
-    background:rgba(0,0,0,0.8);
+    background: #333333;
     padding-top:30px;
     padding-bottom:10px;
 
@@ -16,7 +16,7 @@
 }
 
 #ninja-slider.fullscreen #ninja-slider-prev {
-    left: -50px; 
+    left: -50px;
 }
 #ninja-slider.fullscreen #ninja-slider-next {
     right: -50px;
@@ -28,7 +28,7 @@
     right:0px;
     width:45px;
     height:45px;
-    background: rgba(0,0,0,0.1) url(fullscreen.png) no-repeat 0 0;
+    background: rgba(0,0,0,0.1) url(../img/fullscreen.png) no-repeat 0 0;
     z-index:2;
     opacity:0;
     -webkit-transition:opacity 0.8s;
@@ -87,7 +87,7 @@
 
 
 
-/* --------- slider image ------- */  
+/* --------- slider image ------- */
 #ninja-slider .ns-img {
     background-color:rgba(0,0,0,0.3);
     background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
@@ -104,9 +104,9 @@
 }
 
 
-/* ---------Arrow buttons ------- */   
-/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */ 
-#ninja-slider-pause-play { display:none;}    
+/* ---------Arrow buttons ------- */
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */
+#ninja-slider-pause-play { display:none;}
 
 #ninja-slider-prev, #ninja-slider-next
 {
@@ -127,8 +127,8 @@
     user-select:none;
     border-radius:2px;
     z-index:10;
-    opacity:0.3; 
-    font-family:sans-serif;   
+    opacity:0.3;
+    font-family:sans-serif;
     font-size:13px;
     cursor:pointer;
     -webkit-transition:all 0.7s;
@@ -141,7 +141,7 @@
 
 
 #ninja-slider-prev {
-    left: 0; 
+    left: 0;
 }
 #ninja-slider-next {
     right: 0;
@@ -180,7 +180,7 @@
 #ninja-slider-prev div, #ninja-slider-next div {display:none;}
 
 
-/*------ pager(nav bullets) ------*/      
+/*------ pager(nav bullets) ------*/
 /* The pager id should be: slider id + "-pager" */
 #ninja-slider-pager { display:none;}
 
@@ -203,4 +203,3 @@
         display:none;
     }
 }
-

@@ -9318,6 +9318,15 @@
     .green.link:hover, .green.link:focus {
       color: #0cb658; }
 
+.dark_green {
+  color: #191C0D; }
+
+.medium_green {
+  color: #2D3C21; }
+
+.light_green {
+  color: #708560; }
+
 .red {
   color: #ff0000; }
   .red.link {
@@ -9364,7 +9373,7 @@
       color: #141414; }
 
 .medium_gray {
-  color: #95a5a6; }
+  color: #BDBDBD; }
   .medium_gray.link {
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -9489,10 +9498,13 @@
   background: #d7d7d7; }
 
 .bg_medium_gray {
-  background: #95a5a6; }
+  background: #BDBDBD; }
 
 .bg_dark_gray {
   background: #141414; }
+
+.bg_gray {
+  background: #333333; }
 
 .bg_green {
   background: #18c967; }
@@ -9777,6 +9789,16 @@
     font-weight: 400; }
     .btn.green:hover, .btn.green:focus {
       background-color: #0cb658; }
+
+  .btn.light_green {
+    color: #ffffff;
+    background-color: #708560;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-weight: 400; }
+    .btn.green:hover, .btn.green:focus {
+      background-color: #608560; }
+
   .btn.white {
     color: #2c3e50;
     background-color: #ffffff;
@@ -9790,7 +9812,7 @@
     .btn.white.border_light_gray:hover, .btn.white.border_light_gray:focus {
       border-color: #95a5a6; }
     .btn.white.border_medium_gray:hover, .btn.white.border_medium_gray:focus {
-      border-color: #141414; }
+      border-color: ##BDBDBD; }
     .btn.white.border_dark_gray:hover, .btn.white.border_dark_gray:focus {
       border-color: #000000; }
     .btn.white.border_red:hover, .btn.white.border_red:focus {
@@ -10015,7 +10037,7 @@
   .btn.border_light_gray {
     border-color: #e7e7e7; }
   .btn.border_medium_gray {
-    border-color: #95a5a6; }
+    border-color: #BDBDBD; }
   .btn.border_dark_gray {
     border-color: #141414; }
   .btn.border_red {
@@ -10263,6 +10285,8 @@
     border-color: #ff0000; }
   .input.focus_green:focus {
     border-color: #18c967; }
+  .input.focus_light_green:focus {
+    border-color: #708560; }
   .input.focus_black:focus {
     border-color: #000000; }
   .input.focus_pink:focus {
@@ -10274,7 +10298,7 @@
   .input.focus_light_gray:focus {
     border-color: #e7e7e7; }
   .input.focus_medium_gray:focus {
-    border-color: #95a5a6; }
+    border-color: #BDBDBD; }
   .input.focus_twitter_color:focus {
     border-color: #0aa0f5; }
   .input.focus_facebook_color:focus {
@@ -10630,7 +10654,7 @@ input[type=radio]:checked + label.radio.check_blue:before {
   background: #d7d7d7; }
 
 .hr.medium_gray {
-  background: #95a5a6; }
+  background: #BDBDBD; }
 
 .hr.dark_gray {
   background: #141414; }
