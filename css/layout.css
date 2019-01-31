@@ -523,7 +523,12 @@ b, strong {
 
 /* Content 2 */
 .content_2 {
-  background: #ffffff; }
+  background: #141617 url(../img/services.jpg) 50% 50%;
+  background-size: cover; }
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
+  .content_2 {
+    background-image: url(../img/services.jpg); } }
 
 /* Content 3 */
 .content_3 {

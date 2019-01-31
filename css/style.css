@@ -100,6 +100,11 @@ b, strong {
   font-weight: 600;
 }
 
+.servicesbg {
+  background: #141617 url(../img/services.jpg) 50% 50%;
+  background-size: cover;
+}
+
 .alert {
   display: none;
   position: fixed;
@@ -1654,19 +1659,19 @@ b, strong {
   vertical-align: top;
 }
 
+/* Green Overlay */
+.layer {
+  background-color: rgba(112, 133, 96, 0.7);
+  background-size: cover;
+  z-index: 2;
+}
+
 /* Form 4 */
 .form_4 {
   background: #141414 url(../img/jay-mantri-4033-unsplash.jpg) no-repeat 50% 50%;
   background-size: cover;
   position:relative;
   z-index: 1;
-}
-
-/* Green Overlay */
-.layer {
-  background-color: rgba(112, 133, 96, 0.7);
-  background-size: cover;
-  z-index: 2;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
@@ -3694,17 +3699,15 @@ b, strong {
     margin: 20px auto 0 auto;
   }
   .content_2 {
-    background: #708560 url(../img/services.jpg) no-repeat 50% 50%;
+    background: #141414 url(../img/services.jpg) no-repeat 50% 50%;
     background-size: cover;
     position:relative;
     z-index: 1;
   }
   @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
-  .header_2 {
-    background: #708560 url(../img/services.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    position:relative;
-    z-index: 1;
+    .content_2 {
+      background-image: url(../img/services.jpg);
+    }
   }
   .content_2 .inner {
     margin-top: 40px;
