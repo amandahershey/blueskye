@@ -9418,6 +9418,16 @@
       color: #046bbf; }
 
 /* background-colors */
+
+.bg_dark_green {
+  background: #191C0D; }
+
+.bg_medium_green {
+  background: #2D3C21; }
+
+.bg_light_green {
+  background: #708560; }
+
 .bg_white {
   background: #ffffff; }
 
