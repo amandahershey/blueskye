@@ -100,8 +100,15 @@ b, strong {
   font-weight: 600;
 }
 
+/* Background Images*/
+
 .servicesbg {
   background: #141617 url(../img/services.jpg) 50% 50%;
+  background-size: cover;
+}
+
+.portfoliobg {
+  background: #141617 url(../img/portfolio.jpg) 50% 50%;
   background-size: cover;
 }
 
