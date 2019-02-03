@@ -10112,6 +10112,12 @@
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px; }
+  .input.size100 {
+    font-size: 16px;
+    height: 100px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px; }
   .input.radius4 {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
