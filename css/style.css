@@ -1678,14 +1678,14 @@ b, strong {
 
 /* Overlay */
 .layer {
-  background-color: rgba(112, 133, 96, 0.7);
+  background-color: rgba(112, 133, 96, 0.8);
   background-size: cover;
   z-index: 2;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
   .layer {
-    background-color: rgba(112, 133, 96, 0.7);
+    background-color: rgba(112, 133, 96, 0.8);
     background-size: cover;
     z-index: 2; }
 }
@@ -1711,7 +1711,6 @@ b, strong {
 .form_4 form .form_4_menu:after {
   content: "";
   display: block;
-  width: 100%;
   border-bottom: 1px solid #e7e7e7;
   position: absolute;
   left: 0;
