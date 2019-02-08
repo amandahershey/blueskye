@@ -74,8 +74,33 @@ input, textarea {
   border: 0;
   outline: none;
   background: transparent;
-  color: #2c3e50;
   resize: none;
+}
+
+*::-webkit-input-placeholder {
+    color: #2c3e4f;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #2c3e4f;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #2c3e4f;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #2c3e4f;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #2c3e4f;
+}
+*::placeholder {
+    /* modern browser */
+    color: #2c3e4f;
 }
 
 label {
@@ -7436,3 +7461,34 @@ b, strong {
     line-height: 32px;
   }
 }
+
+/* Thumbnails */
+.thumb-box {
+  padding: 1.4em 0 1em;
+  margin-left: -1%;
+  width: 102%;}
+
+.thumb-box .thumbs {
+    @include clearfix;}
+
+.thumb-box .thumbs li {
+      float: left;
+      width: 25%;
+      text-align: center;
+      padding: 0 1%;}
+
+.thumb-box .thumbs img {
+        width:  100px;
+        height: 100px;
+        background-position: 50% 50%;
+        opacity: .8;
+        @include transition(opacity .32s);
+        border-bottom: 4px solid transparent;}
+
+.thumb-box .thumbs img.active {
+          border-color: $bc-rk-blue;
+          opacity: 1;}
+
+.thumb-box .thumbs img.hover {
+          opacity: 1;
+          @include transition(opacity .2s);}
