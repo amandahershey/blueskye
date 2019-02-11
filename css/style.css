@@ -4735,7 +4735,7 @@ b, strong {
     padding-left: 30px;
   }
 
-/* Smaller than 768px */
+/* Smaller than 992px */
 @media (max-width: 991.99px) {
   h1 br, h2 br {
     display: none;
