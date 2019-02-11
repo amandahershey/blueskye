@@ -1,7 +1,9 @@
 /* Change bootstrap's .container width */
 @media (min-width: 768px) {
   .container {
-    max-width: 750px; } }
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto; } }
 
 @media (min-width: 992px) {
   .container {
