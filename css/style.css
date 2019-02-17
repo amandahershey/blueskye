@@ -6557,6 +6557,10 @@ b, strong {
     font-size: 18px;
     line-height: 28px;
   }
+  .feature_43_flipped .text {
+    font-size: 18px;
+    line-height: 28px;
+  }
   .feature_46 {
     padding-top: 80px;
     padding-bottom: 30px;
@@ -7555,3 +7559,7 @@ b, strong {
 /* Additions */
 .main-menu a:active{
   text-decoration: underline; }
+
+@media (min-width: 1200px) {
+  .navbar-expand-lg {
+    white-space:nowrap; }

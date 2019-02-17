@@ -23,10 +23,10 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="container nopadding">
+		<div class="col-lg-3 right_block">
+			<div class="dark_blue nav_logo padding-left40"><b>Blue</b>Skye Screening</div>
+		</div>
 		<div class="collapse navbar-collapse" id="collapse_target">
-			<div class="col-lg-3 right_block">
-				<div class="dark_blue nav_logo"><b>Blue</b>Skye Screening</div>
-			</div>
 			<div class="col-lg-9 right_block">
 				<ul class="navbar-nav">
 					<li class="nav-item">
@@ -68,30 +68,31 @@
 				</div>
 			</div>
 			<div class="col-lg-6">
-				<form action="form-handler.php" method="post" class="bg_white max_width470 radius8 padding_bottom75">
+				<form id="contact-form" action="formtest.php" method="post" role="form" class="bg_white max_width470 radius8 padding_bottom75">
 					<div class="form_4_menu text-center clearfix"></div>
 					<div class="top70 slider">
 						<div>
               <div class="padding_sides70 form_inner">
               	<h5>Get A FREE Quote</h5>
                 <p style="margin-bottom: 50px;">Let us know a bit about your project and we’ll get back to you within 24 hours.</p>
-								<input type="text" name="name" placeholder="Name" class="bottom30 input size50 border border_medium_gray focus_light_green radius6 width_full padding_sides20" required/>
-								<input type="text" name="phone" placeholder="Phone" class="bottom30 input size50 border border_medium_gray focus_light_green radius6 width_full padding_sides20" required/>
-										<select name="service" class="bottom30 input size50 border border_medium_gray focus_light_green radius6 width_full padding_sides20" required>
-		    							<option name="none">Service</option>
-		    							<option name="service">Screen Enclosure</option>
-		  							  <option name="service">Screen Room, Patio or Porch</option>
-											<option name="service">Florida Room</option>
-		  							  <option name="service">Lanai Enclosure</option>
-		  							  <option name="service">Concrete Slab</option>
-											<option name="service">Pavers/Acrylic Deck</option>
-											<option name="service">Glass, Acrylic or Vinyl Windows</option>
-											<option name="service">Pergola</option>
-											<option name="service">Carport</option>
-											<option name="service">Rescreen and Repairs</option>
-											<option name="service">Other</option>
+								<input type="text" name="name" placeholder="Name" class="bottom30 input size50 border border_medium_gray focus_light_green radius6 width_full padding_sides20" required="required" data-error="Name is required.">
+								<input type="tel" name="phone" placeholder="Phone" class="bottom30 input size50 border border_medium_gray focus_light_green radius6 width_full padding_sides20" required="required" data-error="Phone number is required.">
+										<select id="form_service" name="service" class="bottom30 input size50 border border_medium_gray focus_light_green radius6 width_full padding_sides20" required="required" data-error="Please specify the service you are interested in.">
+		    							<option value="none">Service:</option>
+		    							<option value="service">Screen Enclosure</option>
+		  							  <option value="service">Screen Room, Patio or Porch</option>
+											<option value="service">Florida Room</option>
+		  							  <option value="service">Lanai Enclosure</option>
+		  							  <option value="service">Concrete Slab</option>
+											<option value="service">Pavers/Acrylic Deck</option>
+											<option value="service">Glass, Acrylic or Vinyl Windows</option>
+											<option value="service">Pergola</option>
+											<option value="service">Carport</option>
+											<option value="service">Rescreen and Repairs</option>
+											<option value="service">Other</option>
 										</select>
-								<button class="top10 btn size50 blue radius6 width_full">Get A Quote</button>
+										<input type="submit" class="top10 btn size50 blue radius6 width_full" value="Get A Quote">
+								<!--<button class="top10 btn size50 blue radius6 width_full">Get A Quote</button>-->
 							</div>
 						</div>
 					</div>

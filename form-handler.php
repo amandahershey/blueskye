@@ -6,14 +6,13 @@ if (!empty($_POST))
 		/* SETTINGS */
 
 		// email "subject"
-		$title = 'New message from customer';
+		$title = 'New message from: \"".$from_name."\"';
 		// email field "From" - name of sender (e.g. your first & last name)
 		$from_name = "Blue Skye Screening";
 		// email field "From" - email of sender (e.g. "robot@domain.com")
 		$from_email = "acbhershey@gmail.com";
 		// Email to receive message - PUT YOUR EMAIL HERE
-		$to = "acbhershey@gmail.com";
-
+		$sendTo = "acbhershey@gmail.com";
 		/* END OF SETTINGS */
 
 		$subject = $title;
@@ -21,6 +20,9 @@ if (!empty($_POST))
 		$headers .= "From: \"".$from_name."\" <".$from_email.">\r\n";
 		$headers .= "Reply-To: \"".$from_name."\" <".$from_email.">\r\n";
 		$message = $title."<br>";
+
+		$okMessage = "Your message was successfully sent. Thank you, we'll be in touch soon!"
+		$errorMessage = "There was an error while submitting the form. Please try again."
 
 		/* FORM FIELDS */
 		// if you added some more fields to form, you should add them here too. $_POST["foo"] = <input name="foo" /> or <select name="foo"> or <textarea name="foo">
