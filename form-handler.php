@@ -6,13 +6,13 @@ if (!empty($_POST))
 		/* SETTINGS */
 
 		// email "subject"
-		$title = 'New message from: \"".$from_name."\"';
+		$title = "New message from: $from_name";
 		// email field "From" - name of sender (e.g. your first & last name)
 		$from_name = "Blue Skye Screening";
 		// email field "From" - email of sender (e.g. "robot@domain.com")
-		$from_email = "acbhershey@gmail.com";
+		$from_email = "amandatest@newsite.blueskyescreening.com";
 		// Email to receive message - PUT YOUR EMAIL HERE
-		$sendTo = "acbhershey@gmail.com";
+		$sendTo = "amandatest@newsite.blueskyescreening.com";
 		/* END OF SETTINGS */
 
 		$subject = $title;
@@ -50,11 +50,12 @@ if (!empty($_POST))
 		if(!empty($_POST['remember'])){ 	$message .= "<b>User checked field:</b> Remember me<br />";	}
 		if(!empty($_POST['rules'])){ 		$message .= "<b>User checked field:</b> I agree to the Terms of Service<br />";	}
 		if(!empty($_POST['method'])){ 		$message .= "<b>Payment method:</b> ".$_POST['method'].'<br />';	}
-		if(!empty($_POST['service'])){ 		$message .= "<b>Service:</b> ".$_POST['method'].'<br />';	}
+		if(!empty($_POST['service'])){ 		$message .= "<b>Service:</b> ".$_POST['service'].'<br />';	}
 
 		/* END OF FORM FIELDS */
 
-		$res = mail($to, $subject, $message, $headers);
+		mail($sendTo, $subject, $message, $headers);
+		header("Location: index.html");
 
 		echo 'ok';
 

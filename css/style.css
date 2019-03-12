@@ -138,12 +138,12 @@ b, strong {
 }
 
 .portfoliobg {
-  background: #141617 url(../img/portfolio.jpg) 50% 50%;
+  background: #141617 url(../img/11.jpg) 50% 50%;
   background-size: cover;
 }
 *@media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
   .portfoliobg {
-    background-image: url(../img/portfolio.jpg);
+    background-image: url(../img/11.jpg);
   }
 }
 
@@ -1703,21 +1703,21 @@ b, strong {
 
 /* Overlay */
 .layer {
-  background-color: rgba(112, 133, 96, 0.8);
+  background-color: rgba(112, 133, 96, 0.7);
   background-size: cover;
   z-index: 2;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
   .layer {
-    background-color: rgba(112, 133, 96, 0.8);
+    background-color: rgba(112, 133, 96, 0.7);
     background-size: cover;
     z-index: 2; }
 }
 
 /* Form 4 */
 .form_4 {
-  background: #141414 url(../img/jay-mantri-4033-unsplash.jpg) no-repeat 50% 50%;
+  background: #141414 url(../img/main.jpg) no-repeat 50% 50%;
   background-size: cover;
   position:relative;
   z-index: 1;
@@ -1725,7 +1725,7 @@ b, strong {
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
   .form_4 {
-    background-image: url(../img/jay-mantri-4033-unsplash.jpg);
+    background-image: url(../img/main.jpg);
   }
 }
 
