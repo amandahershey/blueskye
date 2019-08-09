@@ -8596,6 +8596,9 @@
 .max_width_full {
   max-width: 100%; }
 
+.display_block{
+  display: block; }
+
 .height1 {
   height: 1px; }
 

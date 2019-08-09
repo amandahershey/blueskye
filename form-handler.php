@@ -1,66 +1,21 @@
 <?php
-/* This script allows you to receive data from forms to your email */
-if (!empty($_POST))
-	{
+  if(isset( $_POST['name']))
+  $name = $_POST['name'];
+  if(isset( $_POST['address']))
+  $address = $_POST['address'];
+  if(isset( $_POST['phone']))
+  $phone = $_POST['phone'];
+  if(isset( $_POST['email']))
+  $email = $_POST['email'];
+  if(isset( $_POST['service']))
+  $service = $_POST['service'];
 
-		/* SETTINGS */
 
-		// email "subject"
-		$title = "New message from: $from_name";
-		// email field "From" - name of sender (e.g. your first & last name)
-		$from_name = "Blue Skye Screening";
-		// email field "From" - email of sender (e.g. "robot@domain.com")
-		$from_email = "amandatest@newsite.blueskyescreening.com";
-		// Email to receive message - PUT YOUR EMAIL HERE
-		$sendTo = "amandatest@newsite.blueskyescreening.com";
-		/* END OF SETTINGS */
+  $content="\n From: $name \n Address: $address \n Phone: $phone \n Email: $email \n Service Interested In: $service";
+  $recipient = "info@blueskyescreening.com";
+  $mailheader = "From: $email \r\n";
+  $subject = "BlueSkye Screening: New Estimate Request";
+  mail($recipient, $subject, $content, $mailheader) or die("Error: there was a problem submitting your request. Please contact us at (407)857-5079.");
 
-		$subject = $title;
-		$headers = "Content-Type: text/html; charset=UTF-8\r\n";
-		$headers .= "From: \"".$from_name."\" <".$from_email.">\r\n";
-		$headers .= "Reply-To: \"".$from_name."\" <".$from_email.">\r\n";
-		$message = $title."<br>";
-
-		$okMessage = "Your message was successfully sent. Thank you, we'll be in touch soon!"
-		$errorMessage = "There was an error while submitting the form. Please try again."
-
-		/* FORM FIELDS */
-		// if you added some more fields to form, you should add them here too. $_POST["foo"] = <input name="foo" /> or <select name="foo"> or <textarea name="foo">
-
-		if(!empty($_POST['name'])){			$message .= "<b>Name:</b> ".$_POST['name'].'<br />'; }
-		if(!empty($_POST['firstname'])){	$message .= "<b>First Name:</b> ".$_POST['firstname'].'<br />'; }
-		if(!empty($_POST['lastname'])){		$message .= "<b>Last Name:</b> ".$_POST['lastname'].'<br />'; }
-		if(!empty($_POST['phone'])){ 		$message .= "<b>Phone:</b> ".$_POST['phone'].'<br />';	}
-		if(!empty($_POST['email'])){ 		$message .= "<b>E-mail:</b> ".$_POST['email'].'<br />';	}
-		if(!empty($_POST['username'])){ 	$message .= "<b>Username:</b> ".$_POST['username'].'<br />';	}
-		if(!empty($_POST['username2'])){ 	$message .= "<b>Username:</b> ".$_POST['username2'].'<br />';	}
-		if(!empty($_POST['password'])){ 	$message .= "<b>Password:</b> ".$_POST['password'].'<br />';	}
-		if(!empty($_POST['password2'])){ 	$message .= "<b>Password:</b> ".$_POST['password2'].'<br />';	}
-		if(!empty($_POST['budget'])){ 		$message .= "<b>Budget:</b> ".$_POST['budget'].'<br />';	}
-		if(!empty($_POST['company_size'])){ $message .= "<b>Company Size:</b> ".$_POST['company_size'].'<br />';	}
-		if(!empty($_POST['card'])){ 		$message .= "<b>Card Number:</b> ".$_POST['card'].'<br />';	}
-		if(!empty($_POST['exp'])){ 			$message .= "<b>Expiration date:</b> ".$_POST['exp'].'<br />';	}
-		if(!empty($_POST['cvv'])){ 			$message .= "<b>CVV:</b> ".$_POST['cvv'].'<br />';	}
-		if(!empty($_POST['zip'])){ 			$message .= "<b>ZIP code:</b> ".$_POST['zip'].'<br />';	}
-		if(!empty($_POST['country'])){ 		$message .= "<b>Country:</b> ".$_POST['country'].'<br />';	}
-		if(!empty($_POST['city'])){ 		$message .= "<b>City:</b> ".$_POST['city'].'<br />';	}
-		if(!empty($_POST['address'])){ 		$message .= "<b>Address:</b> ".$_POST['address'].'<br />';	}
-		if(!empty($_POST['message'])){ 		$message .= "<b>Message:</b> ".str_replace("\n", "<br />", $_POST['message']).'<br />'; }
-		if(!empty($_POST['send_copy'])){ 	$message .= "<b>User checked field:</b> Send me a copy<br />";	}
-		if(!empty($_POST['remember'])){ 	$message .= "<b>User checked field:</b> Remember me<br />";	}
-		if(!empty($_POST['rules'])){ 		$message .= "<b>User checked field:</b> I agree to the Terms of Service<br />";	}
-		if(!empty($_POST['method'])){ 		$message .= "<b>Payment method:</b> ".$_POST['method'].'<br />';	}
-		if(!empty($_POST['service'])){ 		$message .= "<b>Service:</b> ".$_POST['service'].'<br />';	}
-
-		/* END OF FORM FIELDS */
-
-		mail($sendTo, $subject, $message, $headers);
-		header("Location: index.html");
-
-		echo 'ok';
-
-	}else{
-		echo 'error';
-	}
-
+  header('Location: http://blueskyescreening.com/thankyou.html');
 ?>
