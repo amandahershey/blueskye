@@ -1696,6 +1696,41 @@ b, strong {
   top: 0;
 }
 
+.side-img {
+  max-width: 50%;
+}
+
+.form_2 .input-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_2 .mult-input{
+  overflow: hidden;
+  margin-right: 5px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 995px){
+  .side-img{
+    display: block;
+    position: relative;
+    margin: 0 auto 30px auto;
+    max-width: 90%;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .form_2 .name{
+    flex-grow: 1;
+  }
+
+  .form_2 .num{
+    flex-grow: 1;
+  }
+}
+
 /* Form 3 */
 .form_3 .buttons span {
   vertical-align: top;
